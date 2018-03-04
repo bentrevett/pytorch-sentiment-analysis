@@ -35,6 +35,8 @@ USE_CUDA = torch.cuda.is_available()
 while True:
 
     #pick parameters
+    ATTENTION = random.choice([True, False])
+    TRANSLATION = random.choice([True, False])
     OPTIMIZER = random.choice(['adam', 'rmsprop', 'sgd'])
     OPTIMIZER_EXTRA_PARAM_1 = random.choice([0.8, 0.85, 0.9, 0.99, 0.999]) #beta1 for adam, alpha for rmsprop
     OPTIMIZER_EXTRA_PARAM_2 = random.choice([0.8, 0.85, 0.9, 0.99, 0.999]) #beta2 for adam
@@ -54,7 +56,7 @@ while True:
     FREEZE_EMBEDDING = random.choice([True, False])
 
     prev_save_name = ''
-    param_name = f'OP:{OPTIMIZER},O1:{OPTIMIZER_EXTRA_PARAM_1},O2:{OPTIMIZER_EXTRA_PARAM_2},BS:{BATCH_SIZE},IR:{INIT_LR},MO:{MOMENTUM},ME:{MOMENTUM_EXTRA_PARAM},ML:{MAX_LENGTH},SP:{SCHEDULER_PATIENCE},ED:{EMB_DIM},HD:{HID_DIM},RT:{RNN_TYPE},NL:{N_LAYERS},BI:{BIDIRECTIONAL},DO:{DROPOUT},WA:{WEIGHT_AVERAGE},FE:{FREEZE_EMBEDDING}'
+    param_name = f'AT:{ATTENTION},TR:{TRANSLATION},OP:{OPTIMIZER},O1:{OPTIMIZER_EXTRA_PARAM_1},O2:{OPTIMIZER_EXTRA_PARAM_2},BS:{BATCH_SIZE},IR:{INIT_LR},MO:{MOMENTUM},ME:{MOMENTUM_EXTRA_PARAM},ML:{MAX_LENGTH},SP:{SCHEDULER_PATIENCE},ED:{EMB_DIM},HD:{HID_DIM},RT:{RNN_TYPE},NL:{N_LAYERS},BI:{BIDIRECTIONAL},DO:{DROPOUT},WA:{WEIGHT_AVERAGE},FE:{FREEZE_EMBEDDING}'
 
     print(f'PARAMS:{param_name}')
 
@@ -93,6 +95,8 @@ while True:
 
     model = models.RNNClassification(len(TEXT.vocab),
                                     1,
+                                    TRANSLATION,
+                                    ATTENTION,
                                     EMB_DIM,
                                     HID_DIM,
                                     RNN_TYPE,
