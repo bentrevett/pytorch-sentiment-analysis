@@ -17,9 +17,11 @@ class RNNClassification(nn.Module):
         self.translation = translation
         self.attention = attention
 
+        #translation idea taken from: https://github.com/Smerity/keras_snli
         if translation:
             self.translation_fc = TimeDistributed(nn.Linear(embedding_dim, embedding_dim))
         
+        #self-attention idea taken from: https://github.com/cyb70289/kaggle/blob/master/toxic-comment/models/rnn_att.py
         if attention:
             self.query_weights = nn.Parameter(torch.zeros(hidden_dim*(2 if bidirectional else 1)))
             if torch.cuda.is_available():
