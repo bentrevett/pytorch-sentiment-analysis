@@ -16,6 +16,7 @@ class RNNClassification(nn.Module):
         self.bidirectional = bidirectional
         self.translation = translation
         self.attention = attention
+        #self.cnn = cnn
 
         #translation idea taken from: https://github.com/Smerity/keras_snli
         if translation:
@@ -26,6 +27,10 @@ class RNNClassification(nn.Module):
             self.query_weights = nn.Parameter(torch.zeros(hidden_dim*(2 if bidirectional else 1)))
             if torch.cuda.is_available():
                 self.query_weigts = self.query_weights.cuda()
+
+        #if cnn:
+            #pass
+
 
         if rnn_type == 'LSTM':
             self.rnn = nn.LSTM(embedding_dim, hidden_dim, n_layers, bidirectional=bidirectional, dropout=dropout)

@@ -85,7 +85,7 @@ while True:
     # make iterator for splits
     train_iter, test_iter = data.BucketIterator.splits(
         (train, test), 
-        batch_size=32, 
+        batch_size=BATCH_SIZE, 
         sort_key=lambda x: len(x.text), 
         sort_within_batch=True, 
         repeat=False)
