@@ -102,6 +102,5 @@ ENV/
 
 #data
 .data/*
-data/*
 .vector_cache/*
 saves/*
