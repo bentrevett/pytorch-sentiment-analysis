@@ -32,7 +32,7 @@ pip install torchtext
 
     After we've covered all the fancy upgrades to RNNs, we'll look at a different approach that does not use RNNs. More specifically, we'll implement the model from [Bag of Tricks for Efficient Text Classification](https://arxiv.org/abs/1607.01759). This simple model achieves comparable performance as the *Upgraded Sentiment Analysis*, but trains much faster.
 
-* 4 - [Convolutional Sentiment Analysis]() (WIP)
+* 4 - [Convolutional Sentiment Analysis]() **(WIP)**
 
     Finally, we'll cover convolutional neural networks (CNNs) for sentiment analysis. This model will be an implementation of [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882). 
 
@@ -42,6 +42,6 @@ pip install torchtext
 
     The tutorials use TorchText's built in datasets. This first appendix notebook covers how to load your own datasets using TorchText.
 
-* B - [A Closer Look at Word Embeddings]() (WIP)
+* B - [A Closer Look at Word Embeddings]() **(WIP)**
     
     This appendix notebook covers a brief look at exploring the pre-trained word embeddings provided by TorchText.
