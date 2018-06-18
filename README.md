@@ -14,8 +14,14 @@ To install PyTorch, see installation instructions on the [PyTorch website](pytor
 
 To install TorchText:
 
-```
+``` bash
 pip install torchtext
+```
+
+We'll also make use of spaCy to tokenize our data. To install spaCy, follow the instructions [here](https://spacy.io/usage/) making sure to install the English models with:
+
+``` bash
+python -m spacy download en
 ```
 
 ## Tutorials
