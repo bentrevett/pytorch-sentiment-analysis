@@ -48,6 +48,6 @@ python -m spacy download en
 
     The tutorials use TorchText's built in datasets. This first appendix notebook covers how to load your own datasets using TorchText.
 
-* B - [A Closer Look at Word Embeddings]() **(WIP)**
+* B - [A Closer Look at Word Embeddings](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/B%20-%20A%20Closer%20Look%20at%20Word%20Embeddings.ipynb)
     
     This appendix notebook covers a brief look at exploring the pre-trained word embeddings provided by TorchText.
