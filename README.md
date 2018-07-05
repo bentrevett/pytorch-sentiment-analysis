@@ -40,7 +40,7 @@ python -m spacy download en
 
 * 4 - [Convolutional Sentiment Analysis]() **(WIP)**
 
-    Finally, we'll cover convolutional neural networks (CNNs) for sentiment analysis. This model will be an implementation of [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882). 
+    Finally, we'll cover convolutional neural networks (CNNs) for sentiment analysis. This model will be an implementation of [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882).
 
 ## Appendices
 
@@ -49,5 +49,5 @@ python -m spacy download en
     The tutorials use TorchText's built in datasets. This first appendix notebook covers how to load your own datasets using TorchText.
 
 * B - [A Closer Look at Word Embeddings](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/B%20-%20A%20Closer%20Look%20at%20Word%20Embeddings.ipynb)
-    
+
     This appendix notebook covers a brief look at exploring the pre-trained word embeddings provided by TorchText.
