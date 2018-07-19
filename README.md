@@ -6,7 +6,7 @@ The first 2 tutorials will cover getting started with the de facto approach to s
 
 There are also 2 bonus "appendix" notebooks. The first covers loading your own datasets with TorchText, while the second contains a brief look at the pre-trained word embeddings provided by TorchText.
 
-**If you find any mistakes or disagree with any of the explanations, please do not hesitate to [submit an issue](https://github.com/bentrevett/pytorch-sentiment-analysis/issues/new). I am welcome any feedback, positive or negative!**
+**If you find any mistakes or disagree with any of the explanations, please do not hesitate to [submit an issue](https://github.com/bentrevett/pytorch-sentiment-analysis/issues/new). I welcome any feedback, positive or negative!**
 
 ## Getting Started
 
