@@ -1,6 +1,6 @@
 # PyTorch Sentiment Analysis
 
-This repo contains tutorials covering how to do sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 0.4 and [TorchText](https://github.com/pytorch/text) 0.2.3 using Python 3.6.
+This repo contains tutorials covering how to do sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 0.4 and [TorchText](https://github.com/pytorch/text) 0.3 using Python 3.6.
 
 The first 2 tutorials will cover getting started with the de facto approach to sentiment analysis: recurrent neural networks (RNNs). The third notebook covers the [FastText](https://arxiv.org/abs/1607.01759) model and the final covers a [convolutional neural network](https://arxiv.org/abs/1408.5882) (CNN) model.
 
