@@ -104,3 +104,4 @@ ENV/
 .data/*
 .vector_cache/*
 saves/*
+*.pt
