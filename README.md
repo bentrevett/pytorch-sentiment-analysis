@@ -54,4 +54,4 @@ python -m spacy download en
 
 * B - [A Closer Look at Word Embeddings](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/B%20-%20A%20Closer%20Look%20at%20Word%20Embeddings.ipynb)
 
-    This appendix notebook covers a brief look at exploring the pre-trained word embeddings provided by TorchText.
+    This appendix notebook covers a brief look at exploring the pre-trained word embeddings provided by TorchText by using them to look at similar words as well as implementing a basic spelling error corrector based entirely on word embeddings.
