@@ -105,3 +105,4 @@ ENV/
 .vector_cache/*
 saves/*
 *.pt
+custom_embeddings/trained_embeddings.*
