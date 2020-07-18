@@ -10,7 +10,7 @@ There are also 2 bonus "appendix" notebooks. The first covers loading your own d
 
 ## Getting Started
 
-To install PyTorch, see installation instructions on the [PyTorch website](pytorch.org).
+To install PyTorch, see installation instructions on the [PyTorch website](https://pytorch.org/get-started/locally).
 
 To install TorchText:
 
