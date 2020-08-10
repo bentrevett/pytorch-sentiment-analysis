@@ -1,3 +1,9 @@
+## Note: This repo is currently being updated for the new TorchText API!
+
+**From August 2020 onwards, the new TorchText API from TorchText >=0.7 should be used. This requires PyTorch >=1.6. The implementations below will not be updated in order to provide legacy support. Instead, new tutorials that make use the new API are being written. These are located in the [experimental](https://github.com/bentrevett/pytorch-sentiment-analysis/experimental) and are currently in progress.**
+
+**If you have any feedback in regards to them, please submit and issue with the word "experimental" somewhere in the title.**
+
 # PyTorch Sentiment Analysis
 
 This repo contains tutorials covering how to do sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 1.3 and [TorchText](https://github.com/pytorch/text) 0.4 using Python 3.7.
