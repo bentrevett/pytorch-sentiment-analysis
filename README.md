@@ -1,12 +1,12 @@
-## Note: This repo is currently being updated for the new TorchText API!
+## Note: This repo is currently being updated for the new torchtext API!
 
-**From August 2020 onwards, the new TorchText API from TorchText >=0.7 should be used. This requires PyTorch >=1.6. The implementations below will not be updated in order to provide legacy support. Instead, new tutorials that make use the new API are being written. These are located in the [experimental](https://github.com/bentrevett/pytorch-sentiment-analysis/tree/master/experimental) folder and are currently in progress. They require TorchText 0.8 >= which, as of September 2020, must be built from the master branch of TorchText.**
+**As of November 2020 the new torchtext experimental API - which will be replacing the current API - is in development. To maintain legacy support, the implementations below will not be removed, but will probably be moved to a `legacy` folder at some point. Updated tutorials using the new API are currently being written, though the new API is not finalized so these are subject to change but I will do my best to keep them up to date. The new tutorials are located in the [experimental](https://github.com/bentrevett/pytorch-sentiment-analysis/tree/master/experimental) folder, and require PyTorch 1.7, Python 3.8 and a torchtext built from the master branch - not installed via pip - see the README in the torchtext repo for instructions on how to build torchtext from master.**
 
 **If you have any feedback in regards to them, please submit and issue with the word "experimental" somewhere in the title.**
 
 # PyTorch Sentiment Analysis
 
-This repo contains tutorials covering how to do sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 1.3 and [TorchText](https://github.com/pytorch/text) 0.4 using Python 3.7.
+This repo contains tutorials covering how to perform sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 1.7 and [torchtext](https://github.com/pytorch/text) 0.8 using Python 3.8.
 
 The first 2 tutorials will cover getting started with the de facto approach to sentiment analysis: recurrent neural networks (RNNs). The third notebook covers the [FastText](https://arxiv.org/abs/1607.01759) model and the final covers a [convolutional neural network](https://arxiv.org/abs/1408.5882) (CNN) model.
 
