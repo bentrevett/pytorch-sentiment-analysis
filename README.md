@@ -6,11 +6,11 @@
 
 # PyTorch Sentiment Analysis
 
-This repo contains tutorials covering how to perform sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 1.7 and [torchtext](https://github.com/pytorch/text) 0.8 using Python 3.8.
+This repo contains tutorials covering how to perform sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 1.7, [torchtext](https://github.com/pytorch/text) 0.8 and spaCy 3.0, using Python 3.8.
 
 The first 2 tutorials will cover getting started with the de facto approach to sentiment analysis: recurrent neural networks (RNNs). The third notebook covers the [FastText](https://arxiv.org/abs/1607.01759) model and the final covers a [convolutional neural network](https://arxiv.org/abs/1408.5882) (CNN) model.
 
-There are also 2 bonus "appendix" notebooks. The first covers loading your own datasets with TorchText, while the second contains a brief look at the pre-trained word embeddings provided by TorchText.
+There are also 2 bonus "appendix" notebooks. The first covers loading your own datasets with torchtext, while the second contains a brief look at the pre-trained word embeddings provided by torchtext.
 
 **If you find any mistakes or disagree with any of the explanations, please do not hesitate to [submit an issue](https://github.com/bentrevett/pytorch-sentiment-analysis/issues/new). I welcome any feedback, positive or negative!**
 
@@ -18,7 +18,7 @@ There are also 2 bonus "appendix" notebooks. The first covers loading your own d
 
 To install PyTorch, see installation instructions on the [PyTorch website](https://pytorch.org/get-started/locally).
 
-To install TorchText:
+To install torchtext:
 
 ``` bash
 pip install torchtext
@@ -27,7 +27,7 @@ pip install torchtext
 We'll also make use of spaCy to tokenize our data. To install spaCy, follow the instructions [here](https://spacy.io/usage/) making sure to install the English models with:
 
 ``` bash
-python -m spacy download en
+python -m spacy download en_core_web_sm
 ```
 
 For tutorial 6, we'll use the transformers library, which can be installed via:
@@ -35,13 +35,13 @@ For tutorial 6, we'll use the transformers library, which can be installed via:
 ```bash
 pip install transformers
 ```
-These tutorials were created using version 1.2 of the transformers library.
+These tutorials were created using version 4.3 of the transformers library.
 
 ## Tutorials
 
 * 1 - [Simple Sentiment Analysis](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/1%20-%20Simple%20Sentiment%20Analysis.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bentrevett/pytorch-sentiment-analysis/blob/master/1%20-%20Simple%20Sentiment%20Analysis.ipynb)
 
-    This tutorial covers the workflow of a PyTorch with TorchText project. We'll learn how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop. The model will be simple and achieve poor performance, but this will be improved in the subsequent tutorials.
+    This tutorial covers the workflow of a PyTorch with torchtext project. We'll learn how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop. The model will be simple and achieve poor performance, but this will be improved in the subsequent tutorials.
 
 * 2 - [Upgraded Sentiment Analysis](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/2%20-%20Upgraded%20Sentiment%20Analysis.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bentrevett/pytorch-sentiment-analysis/blob/master/2%20-%20Upgraded%20Sentiment%20Analysis.ipynb)
 
