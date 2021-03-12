@@ -1,12 +1,8 @@
-## Note: This repo is currently being updated for the new TorchText API!
-
-**From August 2020 onwards, the new TorchText API from TorchText >=0.7 should be used. This requires PyTorch >=1.6. The implementations below will not be updated in order to provide legacy support. Instead, new tutorials that make use the new API are being written. These are located in the [experimental](https://github.com/bentrevett/pytorch-sentiment-analysis/tree/master/experimental) folder and are currently in progress. They require TorchText 0.8 >= which, as of September 2020, must be built from the master branch of TorchText.**
-
-**If you have any feedback in regards to them, please submit and issue with the word "experimental" somewhere in the title.**
-
 # PyTorch Sentiment Analysis
 
-This repo contains tutorials covering how to do sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 1.3 and [TorchText](https://github.com/pytorch/text) 0.4 using Python 3.7.
+## Note: This repo only works with torchtext 0.9 or above which requires PyTorch 1.8 or above. If you are using torchtext 0.8 then please use [this](https://github.com/bentrevett/pytorch-sentiment-analysis/tree/torchtext08) branch.
+
+This repo contains tutorials covering how to do sentiment analysis using [PyTorch](https://github.com/pytorch/pytorch) 1.8 and [torchtext](https://github.com/pytorch/text) 0.9 using Python 3.7.
 
 The first 2 tutorials will cover getting started with the de facto approach to sentiment analysis: recurrent neural networks (RNNs). The third notebook covers the [FastText](https://arxiv.org/abs/1607.01759) model and the final covers a [convolutional neural network](https://arxiv.org/abs/1408.5882) (CNN) model.
 
@@ -35,7 +31,8 @@ For tutorial 6, we'll use the transformers library, which can be installed via:
 ```bash
 pip install transformers
 ```
-These tutorials were created using version 1.2 of the transformers library.
+
+These tutorials were created using version 4.3 of the transformers library.
 
 ## Tutorials
 
@@ -56,7 +53,7 @@ These tutorials were created using version 1.2 of the transformers library.
     Next, we'll cover convolutional neural networks (CNNs) for sentiment analysis. This model will be an implementation of [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882).
 
 * 5 - [Multi-class Sentiment Analysis](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/5%20-%20Multi-class%20Sentiment%20Analysis.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bentrevett/pytorch-sentiment-analysis/blob/master/5%20-%20Multi-class%20Sentiment%20Analysis.ipynb)
-    
+
     Then we'll cover the case where we have more than 2 classes, as is common in NLP. We'll be using the CNN model from the previous notebook and a new dataset which has 6 classes.
 
 * 6 - [Transformers for Sentiment Analysis](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/6%20-%20Transformers%20for%20Sentiment%20Analysis.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bentrevett/pytorch-sentiment-analysis/blob/master/6%20-%20Transformers%20for%20Sentiment%20Analysis.ipynb)
